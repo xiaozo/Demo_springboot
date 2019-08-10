@@ -43,8 +43,10 @@ public class DemoApplicationTests {
     public void getterbTest() {
         Person gets = new Person();
         gets.setBoss(true);
-
         System.out.println(JSON.toJSONString(gets));
+
+        MyGetterb myGetterb = new MyGetterb("厉害");
+        System.out.println(JSON.toJSONString(myGetterb));
 
     }
 

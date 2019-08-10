@@ -1,13 +1,12 @@
 package com.example.demo.model;
 
 import com.mythsman.test.BindView;
-import com.mythsman.test.BindViews;
 import com.mythsman.test.Getterb;
 
 //@Getterb
-@BindViews
 public class MyGetterb {
 
+    @BindView(obj = "com.example.demo.until.AppTool",meth = "lastNames")
     private String lastNames;
 
     public MyGetterb(String lastNames) {
@@ -19,5 +18,13 @@ public class MyGetterb {
         return "MyGetterb{" +
                 "lastName='" + lastNames + '\'' +
                 '}';
+    }
+
+    public String getLastNames() {
+        return lastNames;
+    }
+
+    public void setLastNames(String lastNames) {
+        this.lastNames = lastNames;
     }
 }

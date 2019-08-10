@@ -1,7 +1,6 @@
 package com.example.demo.model;
 
 import com.mythsman.test.BindView;
-import com.mythsman.test.BindViews;
 //import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -21,7 +20,6 @@ import java.util.Map;
  */
 @Component
 @ConfigurationProperties(prefix = "person")
-@BindViews
 public class Person {
 
 //    @Value("${person.last-name}")
