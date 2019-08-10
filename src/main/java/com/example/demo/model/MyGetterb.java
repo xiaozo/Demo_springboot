@@ -8,7 +8,6 @@ import com.mythsman.test.Getterb;
 @BindViews
 public class MyGetterb {
 
-    @BindView
     private String lastNames;
 
     public MyGetterb(String lastNames) {

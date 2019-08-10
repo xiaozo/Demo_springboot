@@ -25,8 +25,8 @@ public class Person {
 
 //    @Value("${person.last-name}")
     private String lastName;
-    @BindView
     private Integer age;
+    @BindView(obj = "com.example.demo.until.AppTool",meth = "bosStr")
     private Boolean boss;
     private Date birth;
 

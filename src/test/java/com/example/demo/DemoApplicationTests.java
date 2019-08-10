@@ -3,6 +3,7 @@ package com.example.demo;
 import com.example.demo.conditional.I18n;
 import com.example.demo.model.MyGetterb;
 import com.example.demo.model.Person;
+import com.google.gson.Gson;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,11 +40,11 @@ public class DemoApplicationTests {
 
     @Test
     public void getterbTest() {
-        MyGetterb gets = new MyGetterb("好的");
-        System.out.println(gets);
-
-        String[] componentArray = "java.lang.System.out.println".split("\\.");
-        System.out.println(componentArray);
+        Person gets = new Person();
+        gets.setBoss(false);
+        Gson gson = new Gson();
+        String jsonObject = gson.toJson(gets); // {"name":"张三kidou","age":24}
+        System.out.println(jsonObject);
     }
 
 
