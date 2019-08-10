@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import com.mythsman.test.BindView;
+import com.mythsman.test.BindViews;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -18,10 +20,12 @@ import java.util.Map;
  */
 @Component
 @ConfigurationProperties(prefix = "person")
+@BindViews
 public class Person {
 
 //    @Value("${person.last-name}")
     private String lastName;
+    @BindView
     private Integer age;
     private Boolean boss;
     private Date birth;
@@ -82,5 +86,9 @@ public class Person {
         return "Person{" +
                 "lastName='" + lastName + '\'' +
                 '}';
+    }
+
+    static public String lastNames (String name) {
+        return  name;
     }
 }

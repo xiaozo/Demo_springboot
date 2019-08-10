@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.conditional.I18n;
+import com.example.demo.model.MyGetterb;
 import com.example.demo.model.Person;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -35,5 +36,16 @@ public class DemoApplicationTests {
         System.out.println(i18n.getClass().getName());
         System.out.println(i18n.i18n("lang"));
     }
+
+    @Test
+    public void getterbTest() {
+        MyGetterb gets = new MyGetterb("好的");
+        System.out.println(gets);
+
+        String[] componentArray = "java.lang.System.out.println".split("\\.");
+        System.out.println(componentArray);
+    }
+
+
 
 }
