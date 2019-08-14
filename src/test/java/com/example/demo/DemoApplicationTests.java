@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.alibaba.fastjson.JSON;
 import com.example.demo.conditional.I18n;
+import com.example.demo.config.MyMvcConfigurer;
 import com.example.demo.model.MyGetterb;
 import com.example.demo.model.Person;
 //import com.google.gson.Gson;
@@ -49,7 +50,6 @@ public class DemoApplicationTests {
         System.out.println(JSON.toJSONString(myGetterb));
 
     }
-
 
 
 }
