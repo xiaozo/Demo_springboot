@@ -19,16 +19,4 @@ public class MyGetterb {
                 "lastName='" + lastNames + '\'' +
                 '}';
     }
-
-<<<<<<< HEAD
-
-=======
-    public String getLastNames() {
-        return lastNames;
-    }
-
-    public void setLastNames(String lastNames) {
-        this.lastNames = lastNames;
-    }
->>>>>>> d8b57fde8d67b3f4e41dc9c80a7d10ec3bc54840
 }
