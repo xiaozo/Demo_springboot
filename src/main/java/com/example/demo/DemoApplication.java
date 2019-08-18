@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionOutcome;
 
 //使用MapperScan批量扫描所有的Mapper接口；
-@MapperScan(value = "com.example.demo.mapper.UserMapper")
+@MapperScan(value = "com.example.demo.mapper")
 @SpringBootApplication
 public class DemoApplication {
 
