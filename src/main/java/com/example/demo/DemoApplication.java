@@ -1,11 +1,14 @@
 package com.example.demo;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionOutcome;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
+//使用MapperScan批量扫描所有的Mapper接口；
+@MapperScan(value = "com.example.demo.mapper")
 @SpringBootApplication
 public class DemoApplication extends WebMvcConfigurationSupport {
 
