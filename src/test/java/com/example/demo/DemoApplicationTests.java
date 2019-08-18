@@ -1,9 +1,11 @@
 package com.example.demo;
 
+import com.alibaba.fastjson.JSON;
 import com.example.demo.conditional.I18n;
+import com.example.demo.config.MyMvcConfigurer;
 import com.example.demo.model.MyGetterb;
 import com.example.demo.model.Person;
-import com.google.gson.Gson;
+//import com.google.gson.Gson;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +47,7 @@ public class DemoApplicationTests {
     @Test
     public void getterbTest() {
         Person gets = new Person();
+<<<<<<< HEAD
         gets.setBoss(false);
         Gson gson = new Gson();
         String jsonObject = gson.toJson(gets); // {"name":"张三kidou","age":24}
@@ -80,7 +83,15 @@ public class DemoApplicationTests {
         }
         return reMap;
     }
+=======
+        gets.setBoss(true);
+        System.out.println(JSON.toJSONString(gets));
 
+        MyGetterb myGetterb = new MyGetterb("厉害");
+        System.out.println(JSON.toJSONString(myGetterb));
+>>>>>>> d8b57fde8d67b3f4e41dc9c80a7d10ec3bc54840
+
+    }
 
 
 }

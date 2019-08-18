@@ -1,11 +1,11 @@
-package com.example.demo;
+package com.example.demo.config;
 
 import com.example.demo.service.HelloService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Configuration：指明当前类是一个配置类；就是来替代之前的Spring配置文件
+ * @Configuration：指明当前类是一个配置类；就是来替代之前的Spring配置文件 同时也在容器中添加MyAppConfig
  *
  * 在配置文件中用<bean><bean/>标签添加组件
  *
@@ -17,5 +17,10 @@ public class MyAppConfig {
     public HelloService helloService02(){
         System.out.println("配置类@Bean给容器中添加组件了...");
         return new HelloService();
+    }
+
+    @Bean
+    public MyMvcConfigurer myMvcConfigurer () {
+        return new MyMvcConfigurer();
     }
 }

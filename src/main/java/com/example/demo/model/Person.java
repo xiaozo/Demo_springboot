@@ -1,7 +1,7 @@
 package com.example.demo.model;
 
 import com.mythsman.test.BindView;
-import com.mythsman.test.BindViews;
+//import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -20,7 +20,6 @@ import java.util.Map;
  */
 @Component
 @ConfigurationProperties(prefix = "person")
-@BindViews
 public class Person {
 
 //    @Value("${person.last-name}")
@@ -29,7 +28,6 @@ public class Person {
     @BindView(obj = "com.example.demo.until.AppTool",meth = "bosStr")
     private Boolean boss;
     private Date birth;
-
     private Map<String,Object> maps;
     private List<Object> lists;
 
