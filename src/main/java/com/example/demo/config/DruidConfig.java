@@ -20,7 +20,8 @@ public class DruidConfig {
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
     public DataSource druid(){
-        return  new DruidDataSource();
+        DruidDataSource ds =  new DruidDataSource();
+        return ds;
     }
 
     //配置Druid的监控

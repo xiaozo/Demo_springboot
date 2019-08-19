@@ -6,6 +6,16 @@ public class User {
 
     private String firstName;
 
+    public String getLast_name() {
+        return last_name;
+    }
+
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
+    }
+
+    private String last_name;
+
     public Integer getId() {
         return id;
     }
