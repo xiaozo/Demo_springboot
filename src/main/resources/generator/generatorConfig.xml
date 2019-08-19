@@ -23,8 +23,17 @@
   ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
   ~ THE SOFTWARE.
 
+https://github.com/abel533/Mapper/wiki/4.1.mappergenerator
 终端运行
   mvn mybatis-generator:generate
+
+  @MapperScan(value = "com.example.demo.mapper")
+
+  　在SpringBoot的启动类上，使用@MapperScan注解时引入了错误的包下的。
+
+　　正确的应该是：import tk.mybatis.spring.annotation.MapperScan;
+
+　　错误的引入了：import org.mybatis.spring.annotation.MapperScan;
   -->
 
 <!DOCTYPE generatorConfiguration
@@ -39,7 +48,8 @@
         <property name="useMapperCommentGenerator" value="false"/>
 
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+            <!--<property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>-->
+            <property name="mappers" value="com.example.demo.base.MyMapper"/>
             <property name="caseSensitive" value="true"/>
             <property name="forceAnnotation" value="true"/>
             <property name="beginningDelimiter" value="`"/>
@@ -60,6 +70,7 @@
                              type="XMLMAPPER"/>
 
         <table tableName="gen">
+            <property name="useActualColumnNames" value="true"></property>
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
     </context>

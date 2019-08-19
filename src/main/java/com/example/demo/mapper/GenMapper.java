@@ -1,7 +1,7 @@
 package com.example.demo.mapper;
 
+import com.example.demo.base.MyMapper;
 import com.example.demo.model.Gen;
-import tk.mybatis.mapper.common.Mapper;
 
-public interface GenMapper extends Mapper<Gen> {
+public interface GenMapper extends MyMapper<Gen> {
 }

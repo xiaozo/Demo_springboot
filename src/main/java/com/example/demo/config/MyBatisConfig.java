@@ -5,6 +5,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.boot.autoconfigure.ConfigurationCustomizer;
 import org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.sql.DataSource;
 
@@ -20,5 +21,10 @@ public class MyBatisConfig {
             }
         };
     }
+
+//    @Bean
+//    public ClassPathXmlApplicationContext classPathXmlApplicationContext(){
+//        return new ClassPathXmlApplicationContext("tk/mybatis/mapper/xml/spring.xml");
+//    }
 
 }
