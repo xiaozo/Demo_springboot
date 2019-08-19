@@ -18,6 +18,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.awt.*;
+import java.util.Map;
+
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
@@ -38,7 +41,7 @@ public class DemoApplicationTests {
 
     @Test
     public void contextLoads() {
-
+        
     }
 
     @Test
