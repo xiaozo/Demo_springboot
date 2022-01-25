@@ -4,6 +4,7 @@ import com.mythsman.test.BindView;
 //import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -18,6 +19,7 @@ import java.util.Map;
  * 只有这个组件是容器中的组件，才能容器提供的@ConfigurationProperties功能；
  *
  */
+@PropertySource(value = {"classpath:person.properties"})   ///要把主配置文件里的person都注释掉才能生效
 @Component
 @ConfigurationProperties(prefix = "person")
 public class Person {

@@ -1,0 +1,20 @@
+2022-01-23 12:03:17.257 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 50 ] - Starting DemoApplicationTests on DeerClassdeMac-mini.local with PID 62629 (started by deerclass in /Users/deerclass/Desktop/zlx/Maven/Demo_springboot)
+2022-01-23 12:03:17.262 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 646 ] - No active profile set, falling back to default profiles: default
+2022-01-23 12:03:18.683 [ main ] - [ WARN  ] [ tk.mybatis.spring.mapper.ClassPathMapperScanner : 225 ] - Skipping MapperFactoryBean with name 'genMapper' and 'com.example.demo.mapper.GenMapper' mapperInterface. Bean already defined with the same name!
+2022-01-23 12:03:18.688 [ main ] - [ WARN  ] [ tk.mybatis.spring.mapper.ClassPathMapperScanner : 225 ] - Skipping MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-01-23 12:03:18.692 [ main ] - [ WARN  ] [ tk.mybatis.spring.mapper.ClassPathMapperScanner : 142 ] - No MyBatis mapper was found in '[com.example.demo.mapper]' package. Please check your configuration.
+2022-01-23 12:03:19.036 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - Skipping MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-01-23 12:03:19.036 [ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2022-01-23 12:03:21.346 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 59 ] - Started DemoApplicationTests in 4.869 seconds (JVM running for 6.556)
+2022-01-23 12:03:21.740 [ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 47 ] - 这是info日志...
+2022-01-23 12:03:21.759 [ Thread-2 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-0} closing ...
+2022-01-23 12:04:00.044 ？？？？？[ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 50 ] - Starting DemoApplicationTests on DeerClassdeMac-mini.local with PID 62655 (started by deerclass in /Users/deerclass/Desktop/zlx/Maven/Demo_springboot)
+2022-01-23 12:04:00.048 ？？？？？[ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 646 ] - No active profile set, falling back to default profiles: default
+2022-01-23 12:04:01.032 ？？？？？[ main ] - [ WARN  ] [ tk.mybatis.spring.mapper.ClassPathMapperScanner : 225 ] - Skipping MapperFactoryBean with name 'genMapper' and 'com.example.demo.mapper.GenMapper' mapperInterface. Bean already defined with the same name!
+2022-01-23 12:04:01.032 ？？？？？[ main ] - [ WARN  ] [ tk.mybatis.spring.mapper.ClassPathMapperScanner : 225 ] - Skipping MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-01-23 12:04:01.033 ？？？？？[ main ] - [ WARN  ] [ tk.mybatis.spring.mapper.ClassPathMapperScanner : 142 ] - No MyBatis mapper was found in '[com.example.demo.mapper]' package. Please check your configuration.
+2022-01-23 12:04:01.309 ？？？？？[ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - Skipping MapperFactoryBean with name 'userMapper' and 'com.example.demo.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-01-23 12:04:01.313 ？？？？？[ main ] - [ WARN  ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 44 ] - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2022-01-23 12:04:03.816 ？？？？？[ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 59 ] - Started DemoApplicationTests in 4.301 seconds (JVM running for 6.348)
+2022-01-23 12:04:04.190 ？？？？？[ main ] - [ INFO  ] [ com.example.demo.DemoApplicationTests : 47 ] - 这是info日志...
+2022-01-23 12:04:04.206 ？？？？？[ Thread-2 ] - [ INFO  ] [ com.alibaba.druid.pool.DruidDataSource : 1948 ] - {dataSource-0} closing ...

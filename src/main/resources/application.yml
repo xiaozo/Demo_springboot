@@ -1,15 +1,14 @@
 server:
   port: 8081
-person:
-    lastName: 好的
-    age: 18
-    boss: false
-    birth: 2017/12/12
-    maps: {k1: v1,k2: 12}
-    lists:
-      - lisi
-      - zhaoliu
-
+#person:
+#    lastName: 好的
+#    age: 18
+#    boss: false
+#    birth: 2017/12/12
+#    maps: {k1: v1,k2: 12}
+#    lists:
+#      - lisi
+#      - zhaoliu
 spring:
     datasource:
         name: test
@@ -38,4 +37,6 @@ spring:
 #    reasonable: true
 #    supportMethodsArguments: true
 #    params: count=countSql
+
+
 
