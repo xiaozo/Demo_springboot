@@ -4,9 +4,9 @@ public class User {
 
     private Integer id;
 
+    private String firstName;
 
-
-    private String m_name;
+    private String lastName;
 
     public Integer getId() {
         return id;
@@ -18,14 +18,19 @@ public class User {
     }
 
 
-
-    public String getM_name() {
-        return m_name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setM_name(String m_name) {
-        this.m_name = m_name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
 
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }

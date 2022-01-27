@@ -43,7 +43,6 @@ public class MyServletConfig {
      * 注册listener
 
      */
-
     @Bean
 
     public ServletListenerRegistrationBean<DemoListener> getServletListenerRegistrationBean(){

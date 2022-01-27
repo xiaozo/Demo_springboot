@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.springframework.cache.annotation.EnableCaching;
 import tk.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 //使用MapperScan批量扫描所有的Mapper接口；
 @MapperScan(value = "com.example.demo.mapper")
 @SpringBootApplication
+@EnableCaching
 public class DemoApplication extends WebMvcConfigurationSupport {
 
     public static void main(String[] args) {
