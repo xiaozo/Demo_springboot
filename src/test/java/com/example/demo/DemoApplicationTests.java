@@ -8,11 +8,14 @@ import com.example.demo.model.Gen;
 import com.example.demo.model.Person;
 //import com.google.gson.Gson;
 import com.example.demo.model.User;
+import com.example.demo.service.HelloService;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import tk.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -37,14 +40,23 @@ public class DemoApplicationTests {
     @Autowired
     private SqlSession sqlSession;
 
+
     @Resource
     private UserMapper userMapper;
+
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
+
+    @Autowired
+    RedisTemplate redisTemplate;
+
 
     Logger logger = LoggerFactory.getLogger(getClass());
 
     @Test
     public void contextLoads() {
-        logger.info("这是info日志...");
+        HelloService h = (HelloService) applicationContext.getBean("helloService02");
+        System.out.println(h);
     }
 
     @Test
@@ -68,11 +80,15 @@ public class DemoApplicationTests {
     }
 
 
-    public void genList(){
-        GenMapper userMapper = sqlSession.getMapper(GenMapper.class);
-       List <Gen> list = userMapper.selectAll();
+    @Test
+    public void redisStr(){
+//        stringRedisTemplate.opsForValue().append("msg","test2");
+        stringRedisTemplate.opsForValue().set("msg","test2");
+        System.out.println(JSON.toJSONString(stringRedisTemplate.opsForValue().get("msg")));
+    }
 
-        System.out.println(JSON.toJSONString(list));
+    @Test
+    public void redisObj(){
 
     }
 

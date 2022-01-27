@@ -31,6 +31,10 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
+#        schema:
+#          - classpath:sql/demo.sql
+#        initialization-mode: always
+#        sql-script-encoding: utf-8
 
 #pagehelper:
 #    helperDialect: mysql

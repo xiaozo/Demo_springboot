@@ -2,13 +2,16 @@ package com.example.demo.service;
 
 import com.example.demo.mapper.UserMapper;
 import com.example.demo.model.User;
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-@Component
+@CacheConfig(cacheNames = "User",cacheManager = "userCacheManager")
+@Service
 public class UserService {
 
     @Resource
